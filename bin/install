@@ -26,7 +26,7 @@ install_polaris() {
 
   local download_path="$tmp_download_dir/polaris.tar.gz"
 
-  echo "Downloading pluto from ${download_url} to ${download_path}"
+  echo "Downloading polaris from ${download_url} to ${download_path}"
   curl -Lo $download_path $download_url
 
   echo "Creating bin directory"
@@ -37,7 +37,7 @@ install_polaris() {
 
   echo "Copying binary"
   tar -zxf ${download_path} --directory $tmp_download_dir
-  cp ${tmp_download_dir}/pluto ${bin_install_path}
+  cp ${tmp_download_dir}/polaris ${bin_install_path}
   chmod +x ${binary_path}
 }
 
