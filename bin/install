@@ -38,7 +38,7 @@ install_polaris() {
   echo "Copying binary"
   tar -zxf ${download_path} --directory $tmp_download_dir
   cp ${tmp_download_dir}/polaris ${bin_install_path}
-  chmod +x ${binary_path}
+  chmod +x ${bin_install_path}/polaris
 }
 
 get_arch() {
